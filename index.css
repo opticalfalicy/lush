@@ -8,10 +8,15 @@ body{
     height: 100vh;
     
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     
-    /* flex-direction: column; */
+    flex-direction: column;
 }
+
+@media screen and (min-width: 320px){
+
+
 
 .background{
 
@@ -29,14 +34,14 @@ body{
     height: 100vh;
     background-image: url("l-bg.jpg");
     background-size: 100vw 100vh;
-    filter: blur(.95rem);
+    filter: blur(6px);
     position: absolute;
     z-index: 0;
 }
 
 .circle{
-    width: 25vw;
-    height: 50vh;
+    width: 55vw;
+    height: 55vw;
     background-image: url('l-bg.jpg');
     background-size: cover;
     border-radius: 360px;
@@ -46,7 +51,7 @@ body{
     /* display: none; */
 }
 
-.interface{
+.top{
     position: relative;
     z-index: 3;
     display: flex;
@@ -54,8 +59,18 @@ body{
     height: 10vh;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
+    font-size: 1rem;
+}
+
+.menu-layer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    font-size: .8rem;
+
 }
 
 /* .ui-top{
@@ -72,18 +87,20 @@ body{
 .top-left{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 30vw
+    justify-content: space-around;
+    width: 80vw;
+    font-size: .8rem;
 }
 
-.top-center{
-    width: 15vw;
+.top-title{
+    width: 20vw;
+    font-size: 2rem;
 }
 
 .top-right{
     display: flex;
     justify-content: space-evenly;
-    width: 20vw;
+    width: 25vw;
     /* width: 15vw;
     height: 5vh;
     border: solid white 1px;
@@ -93,10 +110,11 @@ body{
 }
 
 .search{
-    width: 10vw;
+    width: 50vw;
     height: 5vh;
     border: solid white 1px;
     border-radius: 360px;
+    display: none;
 
 }
 
@@ -105,8 +123,8 @@ body{
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    padding: 0 16px;
-    top: 12px;
+    /* padding: 0 16px; */
+    /* top: 12px; */
 }
 
 .kebab dot{
@@ -115,4 +133,24 @@ body{
     border-radius: 5px;
     margin: 3px 0;
     background: white;
+}
+
+.k-img{
+    height: 30px;
+
+}
+
+.mid{
+    color: white;
+    z-index: 3;
+}
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .circle{
+        width: 35vw;
+        height: 35vw;
+    }
 }
