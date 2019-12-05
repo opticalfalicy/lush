@@ -5,7 +5,7 @@ body{
 
 .main{
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     
     display: flex;
     align-items: center;
@@ -68,7 +68,9 @@ body{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: 10vh;
     justify-content: space-evenly;
+    align-items: center;
     font-size: .8rem;
 
 }
@@ -93,8 +95,8 @@ body{
 }
 
 .top-title{
-    width: 20vw;
-    font-size: 2rem;
+    width: 25w;
+    font-size: 1rem;
 }
 
 .top-right{
@@ -136,12 +138,96 @@ body{
 }
 
 .k-img{
-    height: 30px;
+    height: 2.5vh;
 
 }
 
 .mid{
     color: white;
+    z-index: 3;
+    height: 20vh;
+    width: 70vw;
+    display: flex;
+
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.subtitle{
+    font-size: 10vw;
+}
+
+.mid-button{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.insp{
+    border: none;
+    border-radius: 150px;
+    height: 5vh;
+    width: 120px;
+}
+
+.bot{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+
+}
+
+.l-line{
+    color: white;
+    opacity: .3;
+    border: 1px solid white;
+    z-index: 3;
+    position: relative;
+    width: 28vw;
+    height: 0;
+    /* height: .099vh; */
+}
+
+.social{
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-i{
+    position: relative;
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    filter: invert();
+}
+
+.social-t{
+    
+    position: relative;
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    filter: invert();
+    
+}
+
+.social-f{
+    position: relative;
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    filter: invert();
+}
+
+.social-item{
+    width: 3vw;
+    height: 4vw;
+    border: 1px solid ;
+    border-radius: 360px;
+    padding: 10px;
     z-index: 3;
 }
 
