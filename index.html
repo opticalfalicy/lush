@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="main">
@@ -17,9 +18,17 @@
                             <li>outdoor plants</li>
                         </div>
                         <div class="top-right">
-                            <div class="search"></div>
+                            <div class="search-standalone"></div>
                             <div class="kebab">
-                                <img class="k-img" src="./kebab.png">
+                                <img onclick="dropDown()" id="kb" class="k-img" src="./kebab.png">
+                                <div id="dropDown" class="dropdown-content">
+                                    <a href="#">About Us</a>
+                                    <a href="#">Contact</a>
+                                    <a href="#">Login / Register</a>
+                                    <div class="search-drop">
+                                </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
