@@ -1,6 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    font-family: 'Alatsi', sans-serif;
 }
 
 .main{
@@ -20,7 +21,7 @@ body{
 
 .background{
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@ body{
 }
 
 .bg-main{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("l-bg.jpg");
     background-size: 100vw 100vh;
@@ -91,11 +92,13 @@ body{
     flex-direction: row;
     justify-content: space-around;
     width: 80vw;
-    font-size: .8rem;
+    font-size: .55rem;
+    font-weight: 10;
+    opacity: .70;
 }
 
 .top-title{
-    width: 0w;
+    width: 25vw;
     font-size: 1rem;
 }
 
@@ -141,23 +144,39 @@ body{
     filter: invert();
 } */
 
+@keyframes slidein {
+    from {height: 0%;}
+    to {height: 100%;}
+    
+}
+
+@keyframes slideout {
+    from {transform: translateY(100%);}
+    to {transform: translateY(0%);}
+    
+}
+
 .dropdown-content{
     display: none;
     position: absolute;
-    background: white;
+    background: rgb(84, 102, 86);
     width: 100vw;
-    height: 100%;
+    height: 70%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 3;
+    animation-name: slidein;
+    animation: 20s linear 20s;
+    
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgba(255, 255, 255, 0.753);
     /* padding: 12px 16px; */
     text-decoration: none;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
+    width: 16%;
 }
 
 .dropdown-content a:hover {background: rgb(148, 147, 147);}
@@ -165,10 +184,26 @@ body{
 .search-drop{
     width: 35%;
     height: 5vh;
-    border: solid black 1px;
+    border: solid rgba(201, 206, 202, 0.856) 1px;
+    background: whitesmoke;
     border-radius: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     /* display: none; */
+}
 
+.search-drop-inner{
+    width: 80%;
+    height: 4.5vh;
+    border: solid black 1px;
+    background: whitesmoke;
+    border-radius: 360px;
+}
+
+.search-drop-icon{
+    width: 10%;
+    height: 50%;
 }
 
 .show {
@@ -176,12 +211,13 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    animation-name: slidein;
+    animation: 20s infinite 20;
     
 }
 
 .close{
-    color: black;
+    color: whitesmoke;
     width: 5px;
     height: 50px;
 }
@@ -235,7 +271,7 @@ body{
     position: relative;
     width: 25vw;
     height: 0;
-    margin-top: 5%;
+    margin-top: 6%;
     /* height: .099vh; */
 }
 
