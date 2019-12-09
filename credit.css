@@ -1,0 +1,27 @@
+.credit-text{
+    z-index: 3;
+    color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credit-text a{
+    color: rgb(7, 204, 7)
+}
+
+.footer{
+    
+        z-index: 3;
+        color: whitesmoke;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+}
+
+.footer a{
+    color: rgb(7, 204, 7)
+}
